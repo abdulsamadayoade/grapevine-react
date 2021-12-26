@@ -6,6 +6,7 @@ import Collection from './components/Collection/Collection';
 import Product from './components/Product/Product';
 import Image from './components/Image/Image';
 import Picks from './components/Picks/Picks';
+import Testimonials from './components/Testimonials/Testimonials';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Product />
       <Image />
       <Picks />
+      <Testimonials />
     </>
   );
 }
