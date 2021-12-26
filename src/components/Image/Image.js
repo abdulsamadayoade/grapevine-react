@@ -3,7 +3,7 @@ import './Image.scss';
 
 const Image = () => {
     return (
-        <section class="image"></section>
+        <section className="image"></section>
     )
 }
 

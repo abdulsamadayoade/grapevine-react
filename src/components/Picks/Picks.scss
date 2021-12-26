@@ -1,0 +1,99 @@
+.picks {
+    background: var(--clr-tolu);
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: 1000px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    &__grid {
+        margin-bottom: 65px;
+
+        @media (min-width: 1000px) {
+            display: flex;
+            margin-top: 60px;
+            margin-bottom: 150px;
+                
+            > * {
+                flex: 1;
+            }
+        }
+    }
+}
+
+.product {
+    position: relative;
+    
+    @media (min-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 80px;
+
+        @media (min-width: 1000px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &:nth-child(2) {
+        @media (min-width: 1000px) {
+            transform: rotate(7deg);
+            margin: 0 64px;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.3px;
+    }
+    
+    &:nth-child(1)::before {
+        content: 'FACE OIL'
+    }
+
+    &:nth-child(2)::before {
+        content: 'HYDRATING MASK'
+    }
+
+    &:nth-child(3)::before {
+        content: 'EXFOLIANT PASTE'
+    }
+
+    &__img {
+        border: 1px solid var(--clr-fola);
+        padding: 80px 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 32px;
+
+        @media (min-width: 1000px) {
+            height: 100%;
+        }
+    }
+    
+    &__details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__name {
+        font-family: var(--ff-zephyr);
+        font-size: 25.6px;
+        line-height: 1.2;
+    }
+    
+    &__price {
+        font-size: 19.2px;
+    }
+}
