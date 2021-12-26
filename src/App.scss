@@ -149,6 +149,14 @@ p {
     margin: 20px 0 30px;
 }
 
+section {
+    padding: 120px 0;
+
+    @media (min-width: 1000px) {
+        padding: 150px 0;
+    }
+}
+
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {  
     *,

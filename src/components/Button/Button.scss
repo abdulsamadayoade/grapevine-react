@@ -1,0 +1,40 @@
+.btn {
+    font-size: 11px;
+    border: 0.59px solid #2E2E27;
+    padding: 12px 25px;
+    border-radius: 100%;
+    font-family: var(--ff-suisse);
+    font-weight: 700;
+    letter-spacing: .5px;
+    position: relative;
+    transition: all .3s ease;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 90%;
+        height: 100%;
+        border: 0.59px solid #2E2E27;
+        border-radius: 100%;
+        display: none;
+        transition: .5s ease-in;
+    }
+
+    &:hover {
+        background: var(--clr-lola);
+        color: var(--clr-tolu);
+    }
+
+    &:hover::before {
+        display: block;
+        transform: translateX(-10px);
+    }
+
+    @media (min-width: 1000px) {
+        font-size: 15px;
+        padding: 15px 30px;
+        letter-spacing: 1px;
+    }
+}

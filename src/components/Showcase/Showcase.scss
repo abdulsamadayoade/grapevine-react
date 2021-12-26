@@ -1,0 +1,21 @@
+.showcase {
+    background: var(--clr-tolu);
+    text-align: center;
+
+    p {
+        font-family: var(--ff-zephyr);
+        font-size: 22px;
+        margin-bottom: 35px;
+
+        @media (min-width: 768px) {
+            font-size: 40px;
+            line-height: 1.4;
+        }
+
+        @media (min-width: 1000px) {
+            font-size: 55px;
+            line-height: 1.2;
+            margin-bottom: 45px;
+        }
+    }
+}
