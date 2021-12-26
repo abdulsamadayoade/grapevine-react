@@ -1,0 +1,68 @@
+.hero {
+    color: var(--clr-bola);
+    display: flex;
+    align-items: flex-end;
+    height: 70vh;
+
+    @media (min-width: 1100px) {
+        height: 88vh;
+    }
+
+    &__inner {
+        width: 100%;
+    }
+
+    &__subheading {
+        position: relative;
+        padding-left: 15px;
+        font-size: inherit;
+
+        @media (min-width: 400px) {
+            width: 350px;
+        }
+
+        @media (min-width: 1300px) {
+            position: absolute;
+            right: 20%;
+            top: 60%;
+            width: 300px;
+            text-align: center;
+            padding-left: 8px;
+        }
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 100%;
+            background-repeat: no-repeat;
+            
+        }
+
+        &::before {
+            top: 5px;
+            left: -5px;
+            background-image: url('../../assets/patterns/left-bracket.svg');
+        }
+
+        &::after {
+            top: 5px;
+            right: -20px;
+            background-image: url('../../assets/patterns/right-bracket.svg');
+        }
+    }
+
+    &__heading {
+        span {
+            display: block;
+        }
+        
+        &--right {
+            @media(min-width: 350px) {
+                display: block;
+                text-align: right;
+            }
+        }
+    }
+}

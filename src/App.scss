@@ -1,0 +1,162 @@
+/* FONTS */
+@font-face {
+    font-family: 'Zephyr';
+    src: url('./assets/fonts/ZephyrRegular.eot');
+    src: url('./assets/fonts/ZephyrRegular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/ZephyrRegular.woff2') format('woff2'),
+        url('./assets/fonts/ZephyrRegular.woff') format('woff'),
+        url('./assets/fonts/ZephyrRegular.ttf') format('truetype'),
+        url('./assets/fonts/ZephyrRegular.svg#ZephyrRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suisse';
+    src: url('./assets/fonts/SuisseIntl-Light-WebTrial.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    // COLORS
+    --clr-bola: #fff;
+    --clr-lola: #000;
+    --clr-kemi: #FDF7EC;
+    --clr-tolu: #F9F5EF;
+    --clr-fola: #DBD5C9;
+
+    // FONTS
+    --ff-zephyr: 'Zephyr', sans-serif;
+    --ff-suisse: 'Suisse', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    color: var(--clr-lola);
+    font-family: var(--ff-suisse);
+    font-size: 14px;
+    line-height: 1.5;
+
+    @media (min-width: 500px) {
+        font-size: 15px;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: var(--ff-zephyr);
+    font-size: 40px;
+    line-height: 1.1;
+    margin-top: 30px;
+    font-weight: 400;
+
+    @media (min-width: 400px) {
+        font-size: 50px;
+    }
+
+    @media (min-width: 600px) {
+        font-size: 65px;
+    }
+
+    @media (min-width: 700px) {
+        font-size: 80px;
+    }
+
+    @media (min-width: 900px) {
+        font-size: 120px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 150px;
+    }
+}
+
+h2 {
+    font-family: var(--ff-zephyr);
+    font-size: 35px;
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+        font-size: 50px;
+        line-height: 1.1;
+    }
+
+    @media (min-width: 1000px) {
+        font-size: 70px;
+    }
+}
+
+p {
+    @media (min-width: 1000px) {
+        font-size: 18px;
+    }
+}
+
+.p-subheading {
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: .3px;
+
+    @media (min-width: 1000px) {
+        font-size: 13px;
+    }
+}
+
+.p-heading {
+    margin: 20px 0 30px;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+}
