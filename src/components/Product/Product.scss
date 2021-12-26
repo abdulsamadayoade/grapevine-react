@@ -1,0 +1,21 @@
+.products {
+    background: var(--clr-tolu);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+
+    &__body {
+        @media (min-width: 700px) {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+
+    &__img {
+        display: inline;
+    }
+
+    &__body {
+        margin-top: 30px;
+    }
+}

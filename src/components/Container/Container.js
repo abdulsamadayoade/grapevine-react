@@ -16,3 +16,11 @@ export const ContainerSm = ({ children }) => {
         </div>
     )
 }
+
+export const HeaderContainer = ({ children }) => {
+    return (
+        <div className="header-container">
+            { children }
+        </div>
+    )
+}

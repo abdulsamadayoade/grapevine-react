@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import './App.scss';
 import Showcase from './components/Showcase/Showcase';
 import Collection from './components/Collection/Collection';
+import Product from './components/Product/Product';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Showcase />
       <Collection />
+      <Product />
     </>
   );
 }
