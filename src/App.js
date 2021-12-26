@@ -4,6 +4,7 @@ import './App.scss';
 import Showcase from './components/Showcase/Showcase';
 import Collection from './components/Collection/Collection';
 import Product from './components/Product/Product';
+import Image from './components/Image/Image';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Showcase />
       <Collection />
       <Product />
+      <Image />
     </>
   );
 }

@@ -1,0 +1,11 @@
+.image {
+    background: url('https://res.cloudinary.com/dljsalifp/image/upload/v1640472054/grapevine/img4_hxjkvk.png');
+    background-size: cover;
+    padding: 0;
+    height: 70vh;
+    background-position: center;
+
+    @media (min-width: 1000px) {
+        height: 100vh;
+    }
+}
