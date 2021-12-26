@@ -7,6 +7,7 @@ import Product from './components/Product/Product';
 import Image from './components/Image/Image';
 import Picks from './components/Picks/Picks';
 import Testimonials from './components/Testimonials/Testimonials';
+import Gallery from './components/Gallery/Gallery';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Image />
       <Picks />
       <Testimonials />
+      <Gallery />
     </>
   );
 }
