@@ -1,0 +1,61 @@
+.newsletter {
+    background-image: url('https://res.cloudinary.com/dljsalifp/image/upload/v1640472049/grapevine/img14_mvzc2n.png');
+    background-size: cover;
+    background-position: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: var(--clr-bola);
+
+    @media (min-width: 1000px) {
+        background-position: unset;
+    }
+
+    .input-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        border-bottom: 1px solid var(--clr-bola);
+        padding: 5px 0;
+
+        @media (min-width: 768px) {
+            padding: 10px 0;
+        }
+
+        input, button {
+            background: transparent;
+            font-family: inherit;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            flex-basis: 20%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        input {
+            color: var(--clr-bola);
+            flex: 1;
+        }
+
+        input::placeholder {
+            color: var(--clr-bola);
+        }
+    }
+
+    &__inner {
+        @media (min-width: 768px) {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 1000px) {
+            width: 700px;
+        }
+    }
+}
+

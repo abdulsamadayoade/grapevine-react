@@ -8,6 +8,8 @@ import Image from './components/Image/Image';
 import Picks from './components/Picks/Picks';
 import Testimonials from './components/Testimonials/Testimonials';
 import Gallery from './components/Gallery/Gallery';
+import Newsletter from './components/Newsletter/Newsletter';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Picks />
       <Testimonials />
       <Gallery />
+      <Newsletter />
+      <Footer />
     </>
   );
 }
