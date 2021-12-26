@@ -13,15 +13,15 @@ Tools used for this project are:
 5. ThreeJS & HoverEffectJS - to perform transition when the images are hovered.
 
 ## Installation
-npm install
+npm install<br />
 You can clone the repo and install the dependencies by typing the above command in your command line
 
 ## Start
-npm start
-Runs the app in the development mode.
+npm start<br />
+Runs the app in the development mode.<br />
 Open http://localhost:3000 to view it in your browser.
 
-The page will reload when you make changes.
+The page will reload when you make changes.<br />
 You may also see any lint errors in the console.
 
 ## Note
