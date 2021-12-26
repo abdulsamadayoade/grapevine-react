@@ -1,9 +1,9 @@
 import React from 'react';
 import './Footer.scss';
-import FacebookIcon from '../assets/icons/facebook.svg';
-import WhatsappIcon from '../assets/icons/whatsapp.svg';
-import InstagramIcon from '../assets/icons/instagram.svg';
-import TelegramIcon from '../assets/icons/telegram.svg';
+import FacebookIcon from '../../assets/icons/facebook.svg';
+import WhatsappIcon from '../../assets/icons/whatsapp.svg';
+import InstagramIcon from '../../assets/icons/instagram.svg';
+import TelegramIcon from '../../assets/icons/telegram.svg';
 
 const Footer = () => {
     return (
@@ -97,7 +97,7 @@ const Footer = () => {
 
                 <p>Copyright 2021 © Grapevine</p>
             </div>
-    </footer>
+        </footer>
     )
 }
 

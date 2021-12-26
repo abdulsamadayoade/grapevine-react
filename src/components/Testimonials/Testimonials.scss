@@ -19,11 +19,12 @@
         justify-content: center;
         padding: 65px 0;
 
-        img {
-            width: 60%;
+        .imgBox {
+            width: 250px;
+            height: 300px;
 
             @media (min-width: 600px) {
-                width: 300px;
+                width: 250px;
             }
         }
     }

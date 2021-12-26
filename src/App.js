@@ -9,7 +9,7 @@ import Picks from './components/Picks/Picks';
 import Testimonials from './components/Testimonials/Testimonials';
 import Gallery from './components/Gallery/Gallery';
 import Newsletter from './components/Newsletter/Newsletter';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (

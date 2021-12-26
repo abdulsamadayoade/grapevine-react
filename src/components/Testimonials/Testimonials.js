@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container } from '../Container/Container';
-import './Testimonials.scss'
+import './Testimonials.scss';
+import hoverEffect from 'hover-effect';
 
 const Testimonials = () => {
+    const image = 'https://res.cloudinary.com/dljsalifp/image/upload/v1640472046/grapevine/img9_mqapd2.png';
+    useEffect(() => {
+        new hoverEffect({
+            parent: document.querySelector('.imgBox'),
+            intensity: .2,
+            angle: 180,
+            image1: image,
+            image2: image,
+            displacementImage: image
+        });
+    });
     return (
         <section className="testimonials">
             <Container>
                 <div className="testimonials__inner">
                     <div className="testimonials__img">
-                        <img src="https://res.cloudinary.com/dljsalifp/image/upload/v1640472046/grapevine/img9_mqapd2.png" alt="woman" />
+                        <div className="imgBox"></div>
                     </div>
                     <div className="testimonials__text">
                         <p className="testimonials__message">“Grapevine has managed to produce the best naturally derived products without any harmful ingredients in a sophisticated way”</p>
