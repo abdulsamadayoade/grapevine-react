@@ -10,10 +10,12 @@ import Testimonials from './components/Testimonials/Testimonials';
 import Gallery from './components/Gallery/Gallery';
 import Newsletter from './components/Newsletter/Newsletter';
 import Footer from './components/Footer/Footer';
+import Cursor from './components/Cursor/Cursor';
 
 function App() {
   return (
     <>
+      <Cursor />
       <Header />
       <Showcase />
       <Collection />
