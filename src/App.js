@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './components/Header/Header';
 import './App.scss';
+import Header from './components/Header/Header';
 import Showcase from './components/Showcase/Showcase';
 import Collection from './components/Collection/Collection';
 import Product from './components/Product/Product';
